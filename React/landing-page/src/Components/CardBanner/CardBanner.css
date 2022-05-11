@@ -1,0 +1,33 @@
+.col-banner {
+    margin-top: -2% !important;
+}
+
+
+.row-card-banner {
+    background: none !important;
+}
+
+.card-banner {
+    border: none !important;
+    color: rgb(59, 78, 123);
+    background: rgb(252, 186, 69);
+    background: radial-gradient(circle, rgba(252, 186, 69, 1) 15%, rgba(251, 211, 10, 1) 100%);
+    margin: 1% !important;
+}
+
+@media screen and (max-width: 580px) {
+    .col-banner {
+        margin-top: 0%;
+    }
+
+    .row-card-banner {
+        padding: 1%;
+        background: rgb(252, 186, 69) !important;
+        background: linear-gradient(270deg, rgba(252, 186, 69, 1) 15%, rgba(251, 211, 10, 1) 100%) !important;
+    }
+
+    .card-banner {
+        background: none !important;
+        margin: 0% !important;
+    }
+}
