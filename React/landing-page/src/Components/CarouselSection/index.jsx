@@ -12,8 +12,8 @@ export default function CarouselSection() {
         <Carousel fade controls={false} className={'my-carousel'} indicators={false} interval={4000}>
             {images.map((image, index) => {
                 return (
-                    <Carousel.Item>
-                        <img className="d-block w-100" src={image} key={index} alt="First slide" />
+                    <Carousel.Item key={index}>
+                        <img className="d-block w-100" src={image} alt="First slide" />
                         <Carousel.Caption>
                             <h5>Inove,</h5>
                             <h3>Escolha o melhor!</h3>
