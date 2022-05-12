@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container-form-contact {
+    background-image: url("../../assets/form-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-form-contact {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.card-form-contact div h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.card-form-contact .card-header {
+    padding: 0%;
+}
+
+.card-form-contact-body {
+    padding: 3% !important;
+    margin: 2% !important;
+}
+
+.col-invite-contato, .col-formulario-contato {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.col-invite-contato section h1 {
+    font-family: 'Oleo Script', cursive;
+}
