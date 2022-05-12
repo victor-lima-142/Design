@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
 .my-carousel .carousel-inner .carousel-item .carousel-caption {
-    bottom: 10rem !important;
-    left: 0rem !important;
+    bottom: 10rem;
+    left: 0rem;
     width: 45%;
+    padding: 2%;
+}
+
+.my-carousel .carousel-inner .carousel-item img {
+    filter: brightness(80%);
+}
+
+.my-carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: 400;
+    padding: 0%;
+    margin: 0%;
+}
+.my-carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 0%;
+    margin: 0%;
+}
+.my-carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (max-width: 650px) {
+    .my-carousel .carousel-inner .carousel-item img {
+        filter: brightness(80%);
+        height: 300px !important;
+    }
+    .my-carousel .carousel-inner .carousel-item .carousel-caption {
+        position: absolute;
+        bottom: 0rem !important;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        width: 100%;
+        background-color: rgba(31, 31, 31, 0.1);
+        color: #fff;
+        text-align: center;
+    }
 }

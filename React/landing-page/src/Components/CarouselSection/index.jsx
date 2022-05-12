@@ -2,36 +2,26 @@ import { Carousel } from "react-bootstrap"
 import './CarouselSection.css'
 
 export default function CarouselSection() {
+    const images = [
+        require('../../assets/1.png'),
+        require('../../assets/2.png'),
+        require('../../assets/3.png'),
+        require('../../assets/4.png')
+    ]
     return (
         <Carousel fade controls={false} className={'my-carousel'} indicators={false} interval={4000}>
-            <Carousel.Item>
-                <img className="d-block w-100" src={require('../../assets/1.png')} alt="First slide" />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={require('../../assets/2.png')} alt="First slide" />
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={require('../../assets/3.png')} alt="First slide" />
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={require('../../assets/4.png')} alt="First slide" />
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+            {images.map((image, index) => {
+                return (
+                    <Carousel.Item>
+                        <img className="d-block w-100" src={image} key={index} alt="First slide" />
+                        <Carousel.Caption>
+                            <h5>Inove,</h5>
+                            <h3>Escolha o melhor!</h3>
+                            <p>Com os custos de energia subindo, a energia solar é a alternativa inteligente</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                );
+            })}
         </Carousel>
     );
 }
