@@ -2,32 +2,46 @@
     margin-top: -2% !important;
 }
 
-
 .row-card-banner {
     background: none !important;
+    padding-bottom: 2%;
+}
+
+.container-card-banner-info {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
 }
 
 .card-banner {
+    padding: 3%;
     border: none !important;
-    color: rgb(59, 78, 123);
-    background: rgb(252, 186, 69);
-    background: radial-gradient(circle, rgba(252, 186, 69, 1) 15%, rgba(251, 211, 10, 1) 100%);
+    border-radius: .5rem !important;
     margin: 1% !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
     .col-banner {
         margin-top: 0%;
     }
 
+    .container-card-banner-info {
+        background-color: none !important;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
     .row-card-banner {
-        padding: 1%;
-        background: rgb(252, 186, 69) !important;
-        background: linear-gradient(270deg, rgba(252, 186, 69, 1) 15%, rgba(251, 211, 10, 1) 100%) !important;
+        padding-bottom: 2rem !important;
+        padding: 1% !important;
     }
 
     .card-banner {
+        border-radius: 0 !important;
         background: none !important;
         margin: 0% !important;
+        border: none !important;
+        padding: 5% !important;
+        box-shadow: none !important;
     }
 }

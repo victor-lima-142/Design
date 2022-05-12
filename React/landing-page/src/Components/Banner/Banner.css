@@ -1,0 +1,29 @@
+#banner {
+    background-image: url("../../assets/banner-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 10%;
+    padding-left: 8%;
+    color: rgb(255, 255, 255);
+}
+
+#card-header {
+    border-bottom: .9vh white solid;
+    border-top: .9vh white solid;
+}
+
+@media screen and (max-width: 650px) {
+    #banner {
+        padding-top: 40%;
+        padding-bottom: 15%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #card-in-banner {
+        width: 100% !important;
+    }
+}
