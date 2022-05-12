@@ -1,0 +1,5 @@
+.my-carousel .carousel-inner .carousel-item .carousel-caption {
+    bottom: 10rem !important;
+    left: 0rem !important;
+    width: 45%;
+}
