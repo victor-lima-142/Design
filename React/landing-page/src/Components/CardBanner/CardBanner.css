@@ -33,15 +33,15 @@
 
     .row-card-banner {
         padding-bottom: 2rem !important;
-        padding: 1% !important;
+        padding: 0% !important;
     }
 
     .card-banner {
         border-radius: 0 !important;
         background: none !important;
-        margin: 0% !important;
+        margin: 5% !important;
         border: none !important;
         padding: 5% !important;
-        box-shadow: none !important;
+        /* box-shadow: none !important; */
     }
 }
